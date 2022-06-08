@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/luggage/feature-checkin"],
+      "outputs": [
+        "dist/libs/luggage/feature-checkin"
+      ],
       "options": {
         "project": "libs/luggage/feature-checkin/ng-package.json"
       },
@@ -22,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/luggage/feature-checkin"],
+      "outputs": [
+        "coverage/libs/luggage/feature-checkin"
+      ],
       "options": {
         "jestConfig": "libs/luggage/feature-checkin/jest.config.js",
         "passWithNoTests": true
@@ -38,5 +42,8 @@
       }
     }
   },
-  "tags": ["domain:luggage", "type:feature"]
+  "tags": [
+    "domain:luggage",
+    "type:feature"
+  ]
 }
