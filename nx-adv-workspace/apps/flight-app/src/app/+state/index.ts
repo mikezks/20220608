@@ -22,3 +22,19 @@ export const selectRouter = createFeatureSelector<RouterReducerState>('router');
 export const {
   selectRouteParams
 } = getSelectors(selectRouter);
+
+
+/* const state = {
+  name: 'Mary',
+  age: 29
+};
+
+const { age: myAge, name } = state;
+
+console.log(myAge, name);
+
+const arr = ['Peter', 'Max'];
+
+const [namePersonOne, namePersonTwo] = arr;
+
+console.log(namePersonOne, namePersonTwo); */
