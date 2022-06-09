@@ -57,7 +57,7 @@
     </div>
   </div> -->
 
-  <div *ngIf="selectViewModel$ | async as vm" class="card">
+  <div *ngIf="vm$ | async as vm" class="card">
     <div class="content">
       <pre>View Model: {{
         vm | json
