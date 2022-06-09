@@ -25,7 +25,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FlightBookingModule,
+    // FlightBookingModule,
 
     BrowserAnimationsModule,
     FlightCancellingModule,
