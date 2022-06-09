@@ -1,14 +1,11 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
-import { Flight, FlightService } from '@flight-workspace/flight-lib';
-import { ComponentStore } from '@ngrx/component-store';
+import { Flight } from '@flight-workspace/flight-lib';
 import { Store } from '@ngrx/store';
-import { delay, map, Observable, of, switchMap, tap, withLatestFrom } from 'rxjs';
+import { delay, of } from 'rxjs';
 import * as fromFlightBooking from '../+state';
 import { FlightStoreService } from './flight-store.service';
-
-
 
 
 @Component({
