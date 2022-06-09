@@ -46,6 +46,25 @@
     </div>
   </div>
 
+<!--   <div *ngIf="selectFilters$ | async as filters" class="card">
+    <div class="content">
+      <pre>Previous searches: {{
+        filters.reverse() | json
+  }}</pre>
+      <pre>Current Flights: {{
+        selectFlights$ | async | json
+  }}</pre>
+    </div>
+  </div> -->
+
+  <div *ngIf="selectViewModel$ | async as vm" class="card">
+    <div class="content">
+      <pre>View Model: {{
+        vm | json
+  }}</pre>
+    </div>
+  </div>
+
   <div class="row">
     <div *ngFor="let f of flights">
 
