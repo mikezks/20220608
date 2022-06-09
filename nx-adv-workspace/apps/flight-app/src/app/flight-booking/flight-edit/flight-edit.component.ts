@@ -4,6 +4,7 @@ import { Store } from '@ngrx/store';
 import { selectRouteParams } from '../../+state';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-flight-edit',
   templateUrl: './flight-edit.component.html',
 })
@@ -25,5 +26,6 @@ export class FlightEditComponent implements OnInit {
     this.store.select(selectRouteParams).subscribe(console.log);
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   decide(answer: boolean) {}
 }
